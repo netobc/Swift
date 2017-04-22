@@ -1,0 +1,15 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+
+use_frameworks!
+
+xcodeproj 'Firebase-1'
+
+target 'Firebase-1' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+
+  # Pods for Firebase-1
+pod 'Firebase', '>= 2.5.1'
+pod 'Alamofire', '~> 3.4'
+
+end

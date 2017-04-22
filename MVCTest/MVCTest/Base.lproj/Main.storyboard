@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MVCTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7v-Md-F1p">
+                                <rect key="frame" x="120" y="61" width="261" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="261" id="OQE-3Z-0AO"/>
+                                    <constraint firstAttribute="height" constant="21" id="krO-cm-ZYG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bibo" translatesAutoresizingMaskIntoConstraints="NO" id="mrT-nX-FrN" customClass="RoundedImageView" customModule="MVCTest" customModuleProvider="target">
+                                <rect key="frame" x="130" y="123" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="mqx-Q1-oWm"/>
+                                    <constraint firstAttribute="height" constant="240" id="ooA-Pa-wnB"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a new first name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6gk-GV-VTV">
+                                <rect key="frame" x="115" y="85" width="271" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="271" id="NnF-xi-pqL"/>
+                                    <constraint firstAttribute="height" constant="30" id="UVV-fd-uFr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYV-ca-StX">
+                                <rect key="frame" x="185" y="394" width="130" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="A1n-7m-Wet"/>
+                                    <constraint firstAttribute="width" constant="130" id="GPr-q2-0Pn"/>
+                                </constraints>
+                                <state key="normal" title="Rename"/>
+                                <connections>
+                                    <action selector="RenameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HuC-VV-BM2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6gk-GV-VTV" firstAttribute="top" secondItem="V7v-Md-F1p" secondAttribute="bottom" constant="3" id="12t-81-pCY"/>
+                            <constraint firstItem="V7v-Md-F1p" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="EmH-bJ-yUh"/>
+                            <constraint firstItem="6gk-GV-VTV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RMk-qM-APH"/>
+                            <constraint firstItem="mrT-nX-FrN" firstAttribute="top" secondItem="V7v-Md-F1p" secondAttribute="bottom" constant="41" id="VAO-L6-pnm"/>
+                            <constraint firstItem="SYV-ca-StX" firstAttribute="top" secondItem="mrT-nX-FrN" secondAttribute="bottom" constant="31" id="YIE-qh-i6L"/>
+                            <constraint firstItem="SYV-ca-StX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dpI-uV-ou9"/>
+                            <constraint firstItem="mrT-nX-FrN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jhL-Dc-0b2"/>
+                            <constraint firstItem="V7v-Md-F1p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yZb-4z-xUB"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="500" height="500"/>
+                    <connections>
+                        <outlet property="FullName" destination="V7v-Md-F1p" id="FJs-PY-4cQ"/>
+                        <outlet property="RenameField" destination="6gk-GV-VTV" id="Xe3-Ug-AaN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="310"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bibo" width="500" height="320"/>
+    </resources>
+</document>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WebReq_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="syd-Ub-CaL">
+                                <rect key="frame" x="0.0" y="0.0" width="500" height="531"/>
+                                <color key="backgroundColor" red="0.034702061300000003" green="0.92688563479999997" blue="0.02715514254" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhP-HQ-xQf">
+                                <rect key="frame" x="20" y="450" width="143" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="143" id="mYD-hF-4MW"/>
+                                    <constraint firstAttribute="height" constant="30" id="t63-OV-CfH"/>
+                                </constraints>
+                                <state key="normal" title="Map Locator"/>
+                                <connections>
+                                    <action selector="leftbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wNB-Dc-fnl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTx-P0-SGb">
+                                <rect key="frame" x="167" y="450" width="165" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JWK-0W-dFT"/>
+                                    <constraint firstAttribute="width" constant="165" id="Yok-H7-05m"/>
+                                </constraints>
+                                <state key="normal" title="Banks"/>
+                                <connections>
+                                    <action selector="centerbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GM0-Bq-2e5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdO-ql-3kH">
+                                <rect key="frame" x="337" y="450" width="143" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Upd-1k-NpE"/>
+                                    <constraint firstAttribute="width" constant="143" id="qOd-KV-m1J"/>
+                                </constraints>
+                                <state key="normal" title="Contact us"/>
+                                <connections>
+                                    <action selector="rightbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hb5-nu-6eu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="syd-Ub-CaL" secondAttribute="bottom" constant="50" id="0xh-Jj-mKt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mTx-P0-SGb" secondAttribute="bottom" constant="20" id="BWB-4l-eEm"/>
+                            <constraint firstItem="mTx-P0-SGb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H1g-PB-h7H"/>
+                            <constraint firstAttribute="trailing" secondItem="syd-Ub-CaL" secondAttribute="trailing" id="Wi9-KT-99Q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fhP-HQ-xQf" secondAttribute="bottom" constant="20" id="bmM-Ra-3re"/>
+                            <constraint firstItem="tdO-ql-3kH" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="d0w-hv-BGl"/>
+                            <constraint firstItem="syd-Ub-CaL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dHc-EI-9Ts"/>
+                            <constraint firstItem="fhP-HQ-xQf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="drR-Ed-Z0t"/>
+                            <constraint firstItem="syd-Ub-CaL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nc4-ue-nQH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tdO-ql-3kH" secondAttribute="bottom" constant="20" id="uEa-ZI-DLR"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="500" height="500"/>
+                    <connections>
+                        <outlet property="container" destination="syd-Ub-CaL" id="RES-oM-YtA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="310"/>
+        </scene>
+    </scenes>
+</document>
